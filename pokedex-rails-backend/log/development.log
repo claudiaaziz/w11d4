@@ -14136,3 +14136,108 @@ Started GET "/favicon.ico" for ::1 at 2023-11-02 16:43:21 -0400
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-11-02 17:07:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:13:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[36mMove Load (1.4ms)[0m  [1m[34mSELECT "moves".* FROM "moves" INNER JOIN "poke_moves" ON "moves"."id" = "poke_moves"."move_id" WHERE "poke_moves"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  ↳ app/views/api/pokemon/show.json.jbuilder:21
+  Rendered api/pokemon/show.json.jbuilder (Duration: 29.5ms | Allocations: 17496)
+Completed 200 OK in 955ms (Views: 928.2ms | ActiveRecord: 14.1ms | Allocations: 990793)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-11-02 17:07:28 -0400
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:13:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[36mMove Load (0.5ms)[0m  [1m[34mSELECT "moves".* FROM "moves" INNER JOIN "poke_moves" ON "moves"."id" = "poke_moves"."move_id" WHERE "poke_moves"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  ↳ app/views/api/pokemon/show.json.jbuilder:21
+  Rendered api/pokemon/show.json.jbuilder (Duration: 2.7ms | Allocations: 1601)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.9ms | Allocations: 3009)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-11-02 17:10:10 -0400
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:13:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[36mMove Load (0.8ms)[0m  [1m[34mSELECT "moves".* FROM "moves" INNER JOIN "poke_moves" ON "moves"."id" = "poke_moves"."move_id" WHERE "poke_moves"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  ↳ app/views/api/pokemon/show.json.jbuilder:21
+  Rendered api/pokemon/show.json.jbuilder (Duration: 5.3ms | Allocations: 1562)
+Completed 200 OK in 24ms (Views: 7.9ms | ActiveRecord: 1.5ms | Allocations: 2960)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-11-02 17:10:28 -0400
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:13:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[36mMove Load (0.4ms)[0m  [1m[34mSELECT "moves".* FROM "moves" INNER JOIN "poke_moves" ON "moves"."id" = "poke_moves"."move_id" WHERE "poke_moves"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  ↳ app/views/api/pokemon/show.json.jbuilder:21
+  Rendered api/pokemon/show.json.jbuilder (Duration: 2.6ms | Allocations: 1528)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.7ms | Allocations: 2926)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-11-02 17:10:54 -0400
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:13:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[36mMove Load (0.7ms)[0m  [1m[34mSELECT "moves".* FROM "moves" INNER JOIN "poke_moves" ON "moves"."id" = "poke_moves"."move_id" WHERE "poke_moves"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  ↳ app/views/api/pokemon/show.json.jbuilder:21
+  Rendered api/pokemon/show.json.jbuilder (Duration: 2.6ms | Allocations: 1398)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 1.0ms | Allocations: 2773)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-11-02 17:11:28 -0400
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:13:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[36mMove Load (0.4ms)[0m  [1m[34mSELECT "moves".* FROM "moves" INNER JOIN "poke_moves" ON "moves"."id" = "poke_moves"."move_id" WHERE "poke_moves"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  ↳ app/views/api/pokemon/show.json.jbuilder:21
+  Rendered api/pokemon/show.json.jbuilder (Duration: 2.2ms | Allocations: 1442)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 2840)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-11-02 17:11:39 -0400
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:13:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[36mMove Load (0.4ms)[0m  [1m[34mSELECT "moves".* FROM "moves" INNER JOIN "poke_moves" ON "moves"."id" = "poke_moves"."move_id" WHERE "poke_moves"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  ↳ app/views/api/pokemon/show.json.jbuilder:21
+  Rendered api/pokemon/show.json.jbuilder (Duration: 8.1ms | Allocations: 4243)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms | Allocations: 5631)
+
+
+
+NoMethodError - undefined method `name' for nil:NilClass
+        json.move.name
+                 ^^^^^:
+  app/views/api/pokemon/show.json.jbuilder:22
+  app/views/api/pokemon/show.json.jbuilder:21
+  app/views/api/pokemon/show.json.jbuilder:20
+  app/controllers/api/pokemon_controller.rb:14:in `show'
+
+Started POST "/__better_errors/3330061904a7d6a8/variables" for 127.0.0.1 at 2023-11-02 17:11:39 -0400
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-11-02 17:11:54 -0400
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:13:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (Duration: 1.0ms | Allocations: 419)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1857)
+
+

@@ -15,4 +15,10 @@
 #   "updatedAt": "2020-12-16T01:17:24.119Z"
 # }
 
-json.extract @pokemon, :image_url, :id, :number, :attack, :defense, :name, :poke_type, :moves, :captured
+json.extract! @pokemon, :image_url, :id, :number, :attack, :defense, :name
+json.type @pokemon.poke_type
+json.moves do
+    json.array! @list do |move|
+        move.name
+    end
+end
