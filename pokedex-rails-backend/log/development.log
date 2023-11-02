@@ -13859,3 +13859,190 @@ Started GET "/favicon.ico" for 127.0.0.1 at 2023-11-02 15:11:07 -0400
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/" for ::1 at 2023-11-02 15:39:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/claudiaaziz/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/claudiaaziz/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 583)
+Completed 200 OK in 602ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 960581)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 15:39:42 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  Rendered api/pokemon/index.json.jbuilder (Duration: 0.3ms | Allocations: 170)
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 4636)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-11-02 15:39:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/pokemon" for ::1 at 2023-11-02 15:39:58 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:1
+  Rendered api/pokemon/index.json.jbuilder (Duration: 31.1ms | Allocations: 14829)
+Completed 200 OK in 36ms (Views: 26.9ms | ActiveRecord: 8.8ms | Allocations: 15730)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 15:42:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:1
+  Rendered api/pokemon/index.json.jbuilder (Duration: 16.4ms | Allocations: 14541)
+Completed 200 OK in 627ms (Views: 618.0ms | ActiveRecord: 5.8ms | Allocations: 977882)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 15:46:19 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:1
+  Rendered api/pokemon/index.json.jbuilder (Duration: 14.4ms | Allocations: 7648)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.8ms | Allocations: 8536)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:13:58 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:1
+  Rendered api/pokemon/index.json.jbuilder (Duration: 39743.5ms | Allocations: 75830)
+Completed 200 OK in 39749ms (Views: 39732.0ms | ActiveRecord: 16.0ms | Allocations: 76810)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:20:26 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9
+  Rendered api/pokemon/index.json.jbuilder (Duration: 28.2ms | Allocations: 6199)
+Completed 200 OK in 33ms (Views: 21.6ms | ActiveRecord: 10.5ms | Allocations: 7327)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:20:42 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9:in `map'
+  Rendered api/pokemon/index.json.jbuilder (Duration: 9.2ms | Allocations: 3162)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 1.2ms | Allocations: 4038)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:21:19 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9:in `map'
+  Rendered api/pokemon/index.json.jbuilder (Duration: 8.3ms | Allocations: 2631)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 1.0ms | Allocations: 3521)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:21:19 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9:in `map'
+  Rendered api/pokemon/index.json.jbuilder (Duration: 12.1ms | Allocations: 2394)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.9ms | Allocations: 2597)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:21:19 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9:in `map'
+  Rendered api/pokemon/index.json.jbuilder (Duration: 11.1ms | Allocations: 2385)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.8ms | Allocations: 2563)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:21:20 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9:in `map'
+  Rendered api/pokemon/index.json.jbuilder (Duration: 12.2ms | Allocations: 2385)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.8ms | Allocations: 2563)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:21:20 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9:in `map'
+  Rendered api/pokemon/index.json.jbuilder (Duration: 5.6ms | Allocations: 2385)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.6ms | Allocations: 2567)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:21:30 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9
+  Rendered api/pokemon/index.json.jbuilder (Duration: 10.4ms | Allocations: 2620)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.9ms | Allocations: 3478)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:21:42 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  Rendered api/pokemon/index.json.jbuilder (Duration: 9.0ms | Allocations: 2841)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3731)
+
+
+
+NoMethodError - undefined method `map' for nil:NilClass
+json.pokemons.map do |pokemon|
+             ^^^^:
+  app/views/api/pokemon/index.json.jbuilder:9
+  app/controllers/api/pokemon_controller.rb:9:in `index'
+
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+  [1m[36mCACHE Pokemon Load (0.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started POST "/__better_errors/b99d44d4208bde8d/variables" for ::1 at 2023-11-02 16:21:42 -0400
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+  [1m[36mCACHE Pokemon Load (0.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:22:00 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9
+  Rendered api/pokemon/index.json.jbuilder (Duration: 9.4ms | Allocations: 6150)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.9ms | Allocations: 7027)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:22:08 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9
+  Rendered api/pokemon/index.json.jbuilder (Duration: 10.2ms | Allocations: 5906)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.9ms | Allocations: 6102)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:22:12 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9
+  Rendered api/pokemon/index.json.jbuilder (Duration: 11.6ms | Allocations: 7804)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.8ms | Allocations: 8662)
+
+
+Started GET "/api/pokemon" for ::1 at 2023-11-02 16:23:20 -0400
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:9
+  Rendered api/pokemon/index.json.jbuilder (Duration: 18.5ms | Allocations: 7767)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 1.0ms | Allocations: 8643)
+
+
